@@ -1,5 +1,7 @@
 package com.wxj.leetCode;
 
+import java.util.Arrays;
+
 /**
  * @author wxj
  * @version 1.0
@@ -48,12 +50,28 @@ package com.wxj.leetCode;
  */
 public class testPlusOne {
     public static void main(String[] args) {
-
+//        int[] digits = {0};
+        int[] digits = {4,3,2,1};
+        System.out.println(plusOne(digits));
     }
 
     public static int[] plusOne(int[] digits) {
+        // 从数组的尾部开始，也就是从个位开始
+        // i >= 0 ,之前弄成 i > 0  ,导致 数组为 int[] digits = {0}; 的结果直接就 [1,0] 了
+        for (int i = digits.length -1;i >= 0 ; i--){
+            if(digits[i] != 9){
+                digits[i]++;
+                return digits;
+            }else {
+                // 位数为9 的加一后变成 0，可以理解为个位是9 变成0 ，然后到 十位
+                digits[i] = 0;
 
-
-        return  null;
+                // 这里没有return，如果为9 就会走到上一步  digits[i] != 9
+            }
+        }
+        // 如果数组都是9 会进位，长度+ 1
+        int[] temp = new int[digits.length+ 1] ;
+        temp[0] = 1;
+        return temp;
     }
 }
