@@ -12,29 +12,7 @@ package com.wxj.leetCode;
  *
  * @date 2021/6/7 0007 15:46
  */
-public class testGetIntersectionNode {
 
-
-//      Definition for singly-linked list.
-      public class ListNode {
-          int val;
-          ListNode next;
-          ListNode(int x) {
-              val = x;
-              next = null;
-          }
-      }
-
-    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-
-            return null;
-
-    }
-
-}
-=======
- * 输入两个链表，找出它们的第一个公共节点。
- */
 public class testGetIntersectionNode {
 
     public class ListNode{
@@ -70,4 +48,4 @@ public class testGetIntersectionNode {
         return n1;
     }
 }
->>>>>>> origin/master
+
