@@ -13,7 +13,7 @@ public class getKthFromEnd {
       }
 
 
-    public ListNode getKthFromEnd(ListNode head, int k) {
+    public static ListNode getKthFromEnd(ListNode head, int k) {
 
         if(head == null) return null;
 
@@ -34,7 +34,7 @@ public class getKthFromEnd {
 
     }
 
-    public static void main(String[] args) {
-        getKthFromEnd();
-    }
+//    public static void main(String[] args) {
+//        getKthFromEnd();
+//    }
 }
