@@ -1,4 +1,4 @@
-package com.wxj.leetCode;
+package com.wxj.leetCode.linkedList;
 
 /**
  * @author wxj
