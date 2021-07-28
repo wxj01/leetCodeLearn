@@ -1,4 +1,4 @@
-package com.wxj.leetCode;
+package com.wxj.leetCode.linkedList;
 
 /**
  * 206. 反转链表
